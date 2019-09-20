@@ -40,8 +40,11 @@ public class Repartidores implements Personal {
 		this.rfc = rfc;
 	}
 
-	public void sucursalDestino() {
-
+	public void sucursalDestino(Sucursal sucursal, int id) {
+		id = getID();
+		sucursal.getId();
+		String direccion = sucursal.getDireccion();
+		System.out.println("Tu destino es: " + direccion);
 	}
 
 	public void transportar() {

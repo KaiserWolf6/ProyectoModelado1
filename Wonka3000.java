@@ -5,6 +5,7 @@ public class Wonka3000 implements Maquina {
 	//Pendiente de ver, puede ser una clase
 	private String dulce;
 	private Receta receta;
+	//Pendiente de ver si es una clase
 	private int lote;
 
 	public Wonka3000(String dulce, Receta receta, int lote) {
@@ -41,19 +42,19 @@ public class Wonka3000 implements Maquina {
 
 	@Override
 	public void encender() {
-		encender = true;
+		this.encender = true;
 		System.out.println("La maquina ha sido encendida");
 	}
 
 	@Override
 	public void apagar() {
-		encender = false;
+		this.encender = false;
 		System.out.println("La maquina ha sido apagada");
 	}
 
 	@Override
 	public void suspender() {
-		suspender = true;
+		this.suspender = true;
 		System.out.println("La maquina esta siendo suspendida...");
 	}
 

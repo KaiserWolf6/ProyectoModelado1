@@ -40,16 +40,19 @@ public class JefeTecnico implements Personal {
 		this.rfc = rfc;
 	}
 
-	public void recibirPeticion() {
-
+	public void recibirPeticion(Repostero repos, int id) {
+		id = repos.getID();
+		repos.pedirDulces();
+		System.out.println("Recibido...");
 	}
 
 	public void revisarInventario() {
 
 	}
 
-	public void notificarRepartidor() {
-		
+	public void notificarRepartidor(Repartidores r ,int id) {
+		id = r.getID();
+		System.out.println("Tienes una nueva orden de entrega...");
 	}
 	
 }

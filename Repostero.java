@@ -40,8 +40,10 @@ public class Repostero implements Personal {
 		this.rfc = rfc;
 	}	
 
-	public void asignarSucursal() {
-
+	public void asignarSucursal(Sucursal sucursal, int id) {
+		id = this.id.getID();
+		sucursal.getId();
+		sucursal.getDireccion();
 	}
 
 	public void perdirDulces() {
