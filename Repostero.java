@@ -43,11 +43,17 @@ public class Repostero implements Personal {
 	public void asignarSucursal(Sucursal sucursal, int id) {
 		id = this.id.getID();
 		sucursal.getId();
-		sucursal.getDireccion();
+		String sucur = sucursal.getDireccion();
+		System.out.println("Se te ha asignado la sucursal: " + sucur);
 	}
 
 	public void perdirDulces() {
-		
+		System.out.println("introduce los dulces a pedir: "+a);
+		if(a<dulce.getCantidad()){
+			System.out.println("Dulces insuficientes.");
+		}else{
+			dulce.getCantidad() -= a;
+		}
 	}
 
 }

@@ -15,7 +15,7 @@ public class Repartidores implements Personal {
 		return nombre;
 	}
 
-	@Override
+	//@Override
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
@@ -25,7 +25,7 @@ public class Repartidores implements Personal {
 		return id;
 	}
 
-	@Override
+	//@Override
 	public void setID(int id) {
 		this.id = id;
 	}
@@ -35,7 +35,7 @@ public class Repartidores implements Personal {
 		return rfc;
 	}
 
-	@Override
+	//@Override
 	public void setRFC(String rfc) {
 		this.rfc = rfc;
 	}
@@ -48,10 +48,13 @@ public class Repartidores implements Personal {
 	}
 
 	public void transportar() {
-
+		System.out.println("Dulces en camino");
 	}
 
-	public void recibirLote() {
-		
+	public void recibirLote(int lote, Repartidores r) {
+		System.out.println("En mantenimiento");
+		if (r.dulce.getCantidad() == 0) {
+			
+		}	
 	}
 }
