@@ -1,13 +1,12 @@
 public class Gomitas extends Dulce {
-	public String nombre;
-	public 
+	public String tipo_gomitas;
 	public Gomitas() {
-		descripcion = "Gomitas";
+		tipo_gomitas = "Gomitas";
 	}
 
 	@Override
-	public String getDescripcion() {
-		return descripcion;
+	public String getTipoGomitas() {
+		return tipo_gomitas;
 	}
 
 }

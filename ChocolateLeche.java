@@ -1,14 +1,33 @@
 public class ChocolateLeche extends Receta {
 	
-	private Dulce dulce;
+	public int ingredientes;
+	public int cantidad;
+	public String tipo_dulce;
 
-	public ChocolateLeche(Dulce dulce) {
-		this.dulce = dulce;
+	public ChocolateLeche() {
+		ingredientes = 0;
+		cantidad = 0;
+		tipo_dulce = "Chocolate Leche";
 	}
 
-	@Override
-	public String getDescripcion() {
-		return dulce.getDescripcion() + "+ "
+	public int getCantidad() {
+		return cantidad;
 	}
+
+	public int getIngredientes() {
+		return ingredientes;
+	}
+
+	public void setIngredientes(int ingredientes) {
+		this.ingredientes = ingredientes;
+	}
+
+	public String getTipoDulce() {
+		return tipo_dulce;
+	}
+
+	public void preparacion() {
+		
+	}	
 
 }

@@ -7,6 +7,7 @@ public class Galleneitor5000 extends AbstractFactoryMaquina {
 	private Receta receta;
 	//Pendiente de ver si es una clase
 	private int lote;
+	private boolean masa;
 
 	public Galleneitor5000(String dulce, Receta receta, int lote) {
 		this.dulce = dulce;
@@ -14,6 +15,7 @@ public class Galleneitor5000 extends AbstractFactoryMaquina {
 		this.receta = new Receta();
 		this.encender = false;
 		this.suspender = false;
+		this.masa = false;
 	}
 
 	@Override
@@ -46,6 +48,11 @@ public class Galleneitor5000 extends AbstractFactoryMaquina {
 	public void suspender() {
 		this.suspender = true;
 		System.out.println("La maquina esta siendo suspendida...");
+	}
+
+	/*Le pedimos a la maquina que prepare la masa para las galletas*/
+	public void prepararMasa(boolean masa) {
+		
 	}
 	
 }
