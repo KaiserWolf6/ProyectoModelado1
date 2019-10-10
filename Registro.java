@@ -1,4 +1,3 @@
-package mx.unam.ciencias.icc;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

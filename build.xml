@@ -10,7 +10,7 @@
     <jar jarfile="proyecto1.jar">
       <zipfileset dir="${build.dir}" prefix="" />
       <manifest>
-        <attribute name="Main-Class" value="mx.unam.ciencias.icc.Proyecto1"/>
+        <attribute name="Main-Class" value=""/>
       </manifest>
     </jar>
   </target>
@@ -35,7 +35,7 @@
 
   <target name="doc" depends="proyecto1.jar">
     <mkdir dir="${doc.dir}"/>
-    <javadoc packagenames="mx.unam.ciencias.icc.*"
+    <javadoc packagenames=""
              sourcepath="src"
              defaultexcludes="yes"
              destdir="${doc.dir}"
@@ -44,7 +44,7 @@
              version="false"
              use="true"
              windowtitle="Introducción a Ciencias de la Computación">
-      <doctitle><![CDATA[<h1>Introducción a Ciencias de la Computación</h1>]]></doctitle>
+      <doctitle><![CDATA[<h1></h1>]]></doctitle>
       <link href="http://docs.oracle.com/javase/8/docs/api/" />
       <link href="http://docs.oracle.com/javafx/2/api/" />
       <classpath>
