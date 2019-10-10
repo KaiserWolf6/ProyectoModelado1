@@ -52,7 +52,8 @@ public class Galleneitor5000 extends AbstractFactoryMaquina {
 
 	/*Le pedimos a la maquina que prepare la masa para las galletas*/
 	public void prepararMasa(boolean masa) {
-		
+		masa = true;
+		this.masa = masa;
 	}
 	
 }
